@@ -1,2 +1,26 @@
-config:
-  info: "master branch,springCloudConfig2020325/dev.yml version=1"
+server:
+  port: 3344
+
+spring:
+  application:
+    name: configServer
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/xuanweilun/springConfig2020325.git
+          search-paths: springConfig2020325
+          username: 2734395595@qq.com
+          password: 621661gx,.
+
+    label: master
+
+eureka:
+  instance:
+    instance-id: configOrder
+    prefer-ip-address: true
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: http://localhost:7001/eureka
