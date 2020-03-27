@@ -1,27 +1,2 @@
-server:
-  port: 3344
-
-spring:
-  application:
-    name: configServer
-  cloud:
-    config:
-      server:
-        git:
-          uri: https://github.com/xuanweilun/springConfig2020325.git
-          search-paths: springConfig2020325
-
-
-    label: master
-
-eureka:
-  instance:
-    instance-id: config
-    prefer-ip-address: true
-  client:
-    register-with-eureka: true
-    fetch-registry: true
-    service-url:
-      defaultZone: http://localhost:7001/eureka
 config:
   name: xuanweilun
