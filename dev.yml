@@ -1,4 +1,2 @@
-spring:
-  datasource:
-   url:10
-   password: 20
+config:
+  info: "xuanweilun"
