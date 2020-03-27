@@ -17,7 +17,7 @@ spring:
 
 eureka:
   instance:
-    instance-id: configOrder
+    instance-id: config
     prefer-ip-address: true
   client:
     register-with-eureka: true
